@@ -1,0 +1,99 @@
+{% extends 'template.html' %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='stylemain.css') }}">
+<div class="container">
+    
+    <div id="info2" class="information none">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A eveniet qui cupiditate, aut obcaecati est vero? Veniam voluptatibus, ipsum quibusdam, assumenda iusto doloremque sequi non recusandae fugit veritatis repellendus odio.</p>
+        <a href="#" class="btn btn-primary">Añadir al carro</a>
+        <a href="#" id="close" class="btn btn-danger">Cerrar</a>
+    </div>
+
+    <div  class="card" style="width: 18rem;">
+        <img id="info" src="{{ url_for('static', filename='descarga.jpg') }}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">informacion basica del juego como  la sinopsis</p>
+          <p class="card-text price">$ 00.00</p>
+          <a href="#" class="btn btn-primary">Añadir al carro</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='descarga.jpg') }}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">informacion basica del juego como  la sinopsis</p>
+          <p class="card-text price">$ 00.00</p>
+          <a href="#" class="btn btn-primary">Añadir al carro</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='descarga.jpg') }}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">informacion basica del juego como  la sinopsis</p>
+          <p class="card-text price">$ 00.00</p>
+          <a href="#" class="btn btn-primary">Añadir al carro</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='descarga.jpg') }}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">informacion basica del juego como  la sinopsis</p>
+          <p class="card-text price">$ 00.00</p>
+          <a href="#" class="btn btn-primary">Añadir al carro</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='descarga.jpg') }}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">informacion basica del juego como  la sinopsis</p>
+          <p class="card-text price">$ 00.00</p>
+          <a href="#" class="btn btn-primary">Añadir al carro</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='descarga.jpg') }}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">informacion basica del juego como  la sinopsis</p>
+          <p class="card-text price">$ 00.00</p>
+          <a href="#" class="btn btn-primary">Añadir al carro</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='descarga.jpg') }}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">informacion basica del juego como  la sinopsis</p>
+          <p class="card-text price">$ 00.00</p>
+          <a href="#" class="btn btn-primary">Añadir al carro</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='descarga.jpg') }}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">informacion basica del juego como  la sinopsis</p>
+          <p class="card-text price">$ 00.00</p>
+          <a href="#" class="btn btn-primary">Añadir al carro</a>
+        </div>
+    </div>
+</div>
+<script>
+    let info = document.getElementById("info");
+    let info2 = document.getElementById("info2");
+    let close = document.getElementById("close");
+
+    info.addEventListener("click", function () {
+        info2.classList.toggle("none");
+    });
+
+    close.addEventListener("click", function () {
+        info2.classList.toggle("none");
+    });
+</script>
+{% endblock %}
